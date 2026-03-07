@@ -72,8 +72,8 @@ class Player(pygame.sprite.Sprite):
         pygame.draw.rect(display_surface, 'red', bg_rect)
         pygame.draw.rect(display_surface, '#32a852', health_rect)
         pygame.draw.rect(display_surface, 'white', bg_rect, 1)
-      
-     def update(self):
+
+    def update(self):
         self.get_input()
         self.move()
         self.animate()
